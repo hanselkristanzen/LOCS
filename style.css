@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
+/* Copyright: Hansel Kristanzen */
             html,
         body {
         height: 100%;
@@ -85,7 +85,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         z-index: -1;
         }
-
+/* Copyright: Hansel Kristanzen */
         td a{
             text-decoration:none;
             color:white;
