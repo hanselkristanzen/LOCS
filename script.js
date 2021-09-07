@@ -7,3 +7,4 @@ document.getElementById("title").addEventListener("click", function(){
     msg += "Copyright: Hansel Kristanzen";
     alert(msg);
 });
+document.getElementById("alertHi").addEventListener("click", () => alert("hi!"));
