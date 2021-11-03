@@ -6,7 +6,8 @@
         }
         body {
         margin: 0;
-        background: linear-gradient(45deg, #49a09d, #5f2c82);
+        background: black;
+        /* linear-gradient(45deg, #49a09d, #5f2c82); */
         font-family: -apple-system, Helvetica Neue, Helvetica ,'Roboto',sans-serif;
         font-weight: 100;
         }
@@ -24,7 +25,7 @@
             color:white;
         }
         .thetitle a:hover {
-            color:#00aca6;
+            color:#858585;
         }
         .subtitle {
             color:white;
@@ -39,7 +40,7 @@
         }
         .subtitle a:hover {
             text-decoration:underline;
-            color:#00aca6;
+            color:#858585;
         }
         .blok {
             text-align: center;
@@ -67,7 +68,7 @@
         text-align: left;
         }
         thead th {
-        background-color: #55608f;
+        background-color: #5c5c5cd7;
         }
         tbody tr:hover {
         background-color: rgba(255, 255, 255, 0.3);
@@ -92,5 +93,6 @@
         }
         td a:hover {
             text-decoration:underline;
-            color:#00aca6;
+            color:#000000;
+            
         }
