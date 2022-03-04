@@ -6,7 +6,7 @@
         }
         body {
         margin: 0;
-        background-image: url("img/VirgilAbloh.jpg");
+        background-image: url("img/pink.png");
         background-repeat:no-repeat;
         background-size: cover;
         background-position:center;
@@ -29,25 +29,34 @@
         .thetitle a{
             text-decoration:none;
             color:rgb(255, 255, 255);
+            transition: 2s;
         }
         .thetitle a:hover {
-            color:#858585;
+            color:rgb(201, 39, 85);
         }
         .subtitle {
             color:white;
             font-size:15pt;
             font-family: 'Roboto';
             
-            
         }
         .subtitle a {
             text-decoration:none;
             color: white;
+            
         }
         .subtitle a:hover {
             text-decoration:underline;
-            color:#858585;
+            color:#000000;
+            
         }
+        .zoom {
+            transition: 0.2s;
+        }
+        .zoom:hover {
+            transform: scale(1.5);
+        }
+
         .blok {
             text-align: center;
         }
@@ -76,7 +85,7 @@
         text-align: left;
         }
         thead th {
-        background-color: #5c5c5cd7;
+        background-color: rgb(238, 123, 222);
         }
         tbody tr:hover {
         background-color: rgba(255, 255, 255, 0.3);
@@ -102,6 +111,6 @@
         }
         td a:hover {
             text-decoration:underline;
-            color:#5c5c5c;
+            color:rgb(238, 123, 222);
             
         }
