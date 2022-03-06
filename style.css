@@ -6,15 +6,16 @@ html,body {
 
 body {
     margin: 0;
-    background-image: url("img/pink.png");
+    /* background-image: url("img/pink.png"); */
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 115, 227);
     height: 100%;
     /* linear-gradient(45deg, #49a09d, #5f2c82); */
     font-family: -apple-system, Helvetica Neue, Helvetica ,'Roboto',sans-serif;
     font-weight: 100;
+    cursor: default;
 }
 
 .thetitle {
@@ -30,11 +31,11 @@ body {
 .thetitle a{
     text-decoration:none;
     color:rgb(255, 255, 255);
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .thetitle a:hover {
-    color:rgb(201, 39, 85);
+    color: rgba(245, 245, 245, 0.6);
 }
 
 .subtitle {
@@ -118,6 +119,7 @@ tbody td:hover:before {
 td a {
     text-decoration:none;
     color:white;
+    transition: 0.2s;
 }
 
 td a:hover {
