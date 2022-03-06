@@ -128,7 +128,7 @@ td a:hover {
 }
 
 
-#mydiv {
+#spotify {
     position: absolute;
     z-index: 1;
     /* background-color: #f1f1f1;
@@ -138,14 +138,14 @@ td a:hover {
     font-size:14px; 
 }
     
-#mydivheader {
+#spotifyHeader {
     padding-top: 4px;
     padding-bottom:4px;
     padding-left: none;
     padding-right: none;
     cursor: move;
     z-index: 10;
-    background-color: rgb(101, 212, 110);
+    background-color: rgb(28, 215, 96);
     color: #fff;
     border-radius: 6px;
 }
@@ -172,5 +172,23 @@ td a:hover {
 .close:active {
     background: #c14645;
     border: 1px solid #b03537;
+}
+
+.spotIcon {
+    margin-left: 7px;
+    margin-top: 6px;
+}
+
+.spotB {
+    width: 40px;
+    transition: 0.3s;
+}
+
+.spotB:hover {
+    transform:scale(1.3);
+}
+
+.spotB:active {
+    filter:brightness(0.7);
 }
 

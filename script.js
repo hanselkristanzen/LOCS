@@ -11,7 +11,7 @@ document.getElementById("alertHi").addEventListener("click", () => alert("hi!"))
 
 //Spotify drag window
 
-dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("spotify"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -48,14 +48,16 @@ function dragElement(elmnt) {
 }
 
 
-//Close spotify window
+//Close and open spotify window
 
-
-function closeFunction() {
-  var x = document.getElementById("mydiv");
+document.getElementById("spotify")
+function spotButton() {
+  var x = document.getElementById("spotify");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
+
+spotButton(); //biar pas pertama kali buka, ga kebuka spoti nya

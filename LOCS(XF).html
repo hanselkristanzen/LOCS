@@ -72,12 +72,12 @@
         </table>
     </div>
 
-        <!-- Draggable Spotify Window hk™ -->
-    <div id="mydiv">
-        <div id="mydivheader">
+        <!-- Draggable Spotify Window -->
+    <div id="spotify">
+        <div id="spotifyHeader">
 
             <div class="buttons"> <span class="close">
-                <button onclick="closeFunction()" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">.</button>
+                <button onclick="spotButton()" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">.</button>
             </span> </div>
             Spotify
 
@@ -85,6 +85,12 @@
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7JwE7U1A2GiTji9FuUcGo2?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
     
+        <!-- Spotify icon button -->
+    <div class="spotIcon"> 
+            <!-- <img src="img/spotifyLogo.png" alt="Spotify Logo"> -->
+            <input type="image" src="/img/spotifyLogo.png" name="spotB" onclick="spotButton()"class="spotB"/>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
