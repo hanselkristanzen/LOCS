@@ -9,7 +9,7 @@ document.getElementById("title").addEventListener("click", function(){
 });
 document.getElementById("alertHi").addEventListener("click", () => alert("hi!"));
 
-
+//Spotify drag window
 
 dragElement(document.getElementById("mydiv"));
 
@@ -48,8 +48,7 @@ function dragElement(elmnt) {
 }
 
 
-
-
+//Close spotify window
 
 
 function closeFunction() {
