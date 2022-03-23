@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@font-face {
+    font-family: font1;
+    src:url(/font/Helvetica-Bold.ttf);
+}
+
 /* By: Hansel Kristanzen */
 html,body {
     height: 100%;
@@ -13,7 +18,7 @@ body {
     background-color: rgb(255, 115, 227);
     height: 100%;
     /* linear-gradient(45deg, #49a09d, #5f2c82); */
-    font-family: -apple-system, Helvetica Neue, Helvetica ,'Roboto',sans-serif;
+    font-family: font1;
     font-weight: 100;
     cursor: default;
 }
@@ -22,9 +27,9 @@ body {
     color:black;
     margin-bottom:100px;
     height:50px;
-    font-size:50pt;
+    font-size:60pt;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: font1;
     
 }
 
@@ -34,14 +39,14 @@ body {
     transition: 0.3s;
 }
 
-.thetitle a:hover {
+.thetitle a:hover{
     color: rgba(245, 245, 245, 0.6);
 }
 
 .subtitle {
     color:white;
     font-size:15pt;
-    font-family: 'Roboto';
+    font-family: font1;
 }
 
 .subtitle a {
@@ -55,7 +60,7 @@ body {
 }
 
 .zoomz {
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .zoomz:hover {
@@ -148,6 +153,7 @@ td a:hover {
     background-color: rgb(28, 215, 96);
     color: #fff;
     border-radius: 6px;
+    font-family: font1;
 }
 
 .close {
