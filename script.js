@@ -1,12 +1,24 @@
-document.getElementById("infoWindow").addEventListener("click", function(){
-    var newLine = "\n";
+//Version
+var version = "Version 1.3";
+
+//Alert Version Window
+function alertVersionWindow(){
+  var newLine = "\n";
     var msg = "LOCS";
     msg += newLine;
-    msg += "Version: 1.3";
+    msg += version;
     msg += newLine;
     msg += "By: Hansel Kristanzen";
     alert(msg);
-});
+}
+
+//Info Window
+document.querySelector('#infoWindow').addEventListener("click", alertVersionWindow);
+
+//Version Info
+document.querySelector('#versionInfo').addEventListener("click", alertVersionWindow);
+
+//alertHi
 document.getElementById("alertHi").addEventListener("click", () => alert("hi!"));
 
 //Spotify drag window

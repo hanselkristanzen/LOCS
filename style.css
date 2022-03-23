@@ -132,7 +132,7 @@ td a:hover {
     color:rgb(238, 123, 222);
 }
 
-
+/* Spotify */
 #spotify {
     position: absolute;
     z-index: 1;
@@ -198,3 +198,18 @@ td a:hover {
     filter:brightness(0.7);
 }
 
+/* Version Info */
+#versionInfo {
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding: 7px;
+    padding-top: 5%;
+    padding-right: 5%;
+    color:rgb(236, 144, 223);
+    transition:0.4s;
+}
+
+#versionInfo:hover {
+    color:white;
+}
