@@ -1,4 +1,4 @@
-document.getElementById("title").addEventListener("click", function(){
+document.getElementById("infoWindow").addEventListener("click", function(){
     var newLine = "\n";
     var msg = "LOCS";
     msg += newLine;
