@@ -22,7 +22,6 @@ document.querySelector('#versionInfo').addEventListener("click", alertVersionWin
 document.getElementById("alertHi").addEventListener("click", () => alert("hi!"));
 
 //Spotify drag window
-
 dragElement(document.getElementById("spotify"));
 
 function dragElement(elmnt) {
@@ -61,7 +60,6 @@ function dragElement(elmnt) {
 
 
 //Close and open spotify window
-
 document.getElementById("spotify")
 function spotButton() {
   var x = document.getElementById("spotify");
@@ -73,3 +71,19 @@ function spotButton() {
 }
 
 spotButton(); //biar pas pertama kali buka, ga kebuka spoti nya
+
+//Date and Time
+var element = document.getElementById('currentTime');
+
+setInterval(function () {
+  var today = new Date();
+  var DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var MONTHNAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var month = MONTHNAMES[new Date().getMonth()];
+  var day = DAYS[new Date().getDay()];
+  var minutes = (today.getMinutes() < 10) ? "0" + today.getMinutes() : today.getMinutes();
+  var seconds = (today.getSeconds() < 10) ? "0" + today.getSeconds() : today.getSeconds();
+  var time = today.getHours() + "." + minutes + "." + seconds;
+  var date = `${new Date().getDate()}`;
+  var dateTime = `${day} ${date} ${month} &nbsp;${time}`;
+  element.innerHTML = dateTime;}, 1000);

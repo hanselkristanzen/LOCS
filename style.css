@@ -21,6 +21,7 @@ body {
     font-family: font1;
     font-weight: 100;
     cursor: default;
+    overflow: hidden;
 }
 
 .thetitle {
@@ -30,7 +31,6 @@ body {
     font-size:60pt;
     text-align: center;
     font-family: font1;
-    
 }
 
 .thetitle a{
@@ -140,9 +140,9 @@ td a:hover {
     border: 1px solid #d3d3d3; */
     text-align: center;
     font-weight: bold;
-    font-size:14px; 
+    font-size:14px;
 }
-    
+
 #spotifyHeader {
     padding-top: 4px;
     padding-bottom:4px;
@@ -213,3 +213,42 @@ td a:hover {
 #versionInfo:hover {
     color:white;
 }
+
+/* Current Time */
+#currentTime {
+    position:absolute;
+    right: 0;
+    top: 0;
+    padding-right: 7px;
+    padding-top: 4px;
+    font-size: 0.9em;
+}
+
+/* Animation Wobble */
+/* figure {
+    animation: wobble 5s linear infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: wobble;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    width: 5%;
+}
+
+@keyframes wobble {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+} */
