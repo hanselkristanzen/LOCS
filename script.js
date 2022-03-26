@@ -87,3 +87,33 @@ setInterval(function () {
   var date = `${new Date().getDate()}`;
   var dateTime = `${day} ${date} ${month} &nbsp;${time}`;
   element.innerHTML = dateTime;}, 1000);
+
+//Dark Light Theme Switcher
+//const checkbox = document.querySelector("#checkbox");
+//
+//checkbox.addEventListener("change", () => {
+//  // Toggle website theme
+//  document.body.classList.toggle("dark");
+//});
+
+var checkbox = document.querySelector('#checkbox');
+var switcher = document.querySelector('.switcher');
+var yyy = 0; //just random variable for if statement below
+checkbox.addEventListener("click", function(){ 
+  //switch animation
+  if (yyy == 0) {
+    switcher.style.transtion = "0.1s";
+    switcher.style.transform = "translateX(26px)";
+    yyy = 1;
+  } else {
+    switcher.style.transition = "0.1s";
+    switcher.style.transform = "translateX(0px)";
+    yyy = 0;
+  }
+})
+
+checkbox.addEventListener("change", function() { 
+  //switch toggle
+  document.body.classList.toggle("dark");
+})
+

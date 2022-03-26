@@ -3,6 +3,13 @@
     font-family: font1;
     src:url(font/Helvetica-Bold.ttf);
 }
+:root {
+    --appleGrey: rgba(245, 245, 247, 0.75);
+    --hkPink: rgb(255, 115, 227);
+    --hkAlmostPink: rgb(238, 123, 222);
+    --hkDarkPink: rgb(236, 144, 223);
+    --spotyGreen: rgb(28, 215, 96);
+}
 
 /* By: Hansel Kristanzen */
 html,body {
@@ -15,7 +22,7 @@ body {
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
-    background-color: rgb(255, 115, 227);
+    background-color: var(--hkPink);
     height: 100%;
     /* linear-gradient(45deg, #49a09d, #5f2c82); */
     font-family: font1;
@@ -98,11 +105,11 @@ th {
 }
 
 thead th {
-    background-color: rgb(238, 123, 222);
+    background-color: var(--hkAlmostPink);
 }
 
 tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 tbody td {
@@ -117,7 +124,7 @@ tbody td:hover:before {
     right: 0;
     top: -9999px;
     bottom: -9999px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: -1;
 }
 
@@ -129,7 +136,7 @@ td a {
 
 td a:hover {
     text-decoration:underline;
-    color:rgb(238, 123, 222);
+    color: var(--hkAlmostPink);
 }
 
 /* Spotify */
@@ -150,7 +157,7 @@ td a:hover {
     padding-right: none;
     cursor: move;
     z-index: 10;
-    background-color: rgb(28, 215, 96);
+    background-color: var(--spotyGreen);
     color: #fff;
     border-radius: 6px;
     font-family: font1;
@@ -186,7 +193,7 @@ td a:hover {
 }
 
 .spotB {
-    width: 40px;
+    width: 35px;
     transition: 0.3s;
 }
 
@@ -206,7 +213,7 @@ td a:hover {
     padding: 7px;
     padding-top: 5%;
     padding-right: 5%;
-    color:rgb(236, 144, 223);
+    color: var(--hkDarkPink);
     transition:0.4s;
 }
 
@@ -253,6 +260,7 @@ td a:hover {
     }
 } */
 
+/* hk logo */
 #hkLogo {
     position:absolute;
     width:300px;
@@ -262,6 +270,11 @@ td a:hover {
     left:50%;
     text-align: center;
     transition: 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+#hkLogo a:active {
+    color: white;
 }
 
 #hkLogo:hover {
@@ -270,4 +283,109 @@ td a:hover {
 
 #hkLogo a {
     text-decoration: none;
+    color: black;
+}
+
+/* Dark Light Theme Switcher */
+.theme-switch {
+    position: fixed;
+    margin: 7px 10px 0 0;
+    top: 3px;
+    left: 50px;
+    transition: 0.3s;
+}
+
+.theme-switch:hover {
+    transform: scael(1.5);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 40px;
+    height: 16px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+}
+
+.switcher {
+    background-color: rgb(255, 115, 227);
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.switcher:active {
+    background-color: rgb(199, 89, 184);
+}
+
+.moon {
+    /* color: #ffa502; */
+    color: white;
+}
+  
+.sun {
+    /* color: #ff4757; */
+    color: rgb(0, 0, 0);
+}
+
+.checkbox:checked + .label .switcher {
+    transform: translateX(26px); 
+    transition: 0.1s;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.dark label {
+    background-color:rgba(219, 134, 208, 0.774);
+}
+
+.dark thead tr th {
+    background-color:rgba(255, 255, 255, 0.171);
+    transition: 1s;
+}
+
+.dark #versionInfo {
+    color: rgba(255, 255, 255, 0.171);
+}
+
+.dark #hkLogo a {
+    color: white;
+}
+
+.dark td a:hover {
+    color: white; 
+    text-decoration: none;
+}
+
+.dark td a {
+    color: var(--appleGrey);
+}
+
+.dark td {
+    color: var(--appleGrey);
+}
+
+.dark th {
+    color: rgba(245, 245, 247, 0.85);
+}
+
+.dark #versionInfo:hover {
+    color: white;
 }
