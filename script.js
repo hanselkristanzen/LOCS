@@ -83,7 +83,8 @@ setInterval(function () {
   var day = DAYS[new Date().getDay()];
   var minutes = (today.getMinutes() < 10) ? "0" + today.getMinutes() : today.getMinutes();
   var seconds = (today.getSeconds() < 10) ? "0" + today.getSeconds() : today.getSeconds();
-  var time = today.getHours() + "." + minutes + "." + seconds;
+  var hours = (today.getHours() < 10) ? "0" + today.getHours() : today.getHours();
+  var time = hours + "." + minutes + "." + seconds;
   var date = `${new Date().getDate()}`;
   var dateTime = `${day} ${date} ${month} &nbsp;${time}`;
   element.innerHTML = dateTime;}, 1000);
