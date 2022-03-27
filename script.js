@@ -13,7 +13,7 @@ function alertVersionWindow(){
 }
 
 //Info Window
-document.querySelector('#infoWindow').addEventListener("click", alertVersionWindow);
+document.getElementById('infoWindow').addEventListener("click", alertVersionWindow);
 
 //Version Info
 document.querySelector('#versionInfo').addEventListener("click", alertVersionWindow);
@@ -118,3 +118,36 @@ checkbox.addEventListener("change", function() {
   document.body.classList.toggle("dark");
 })
 
+//Switch Kelas
+var landingPage = document.querySelector("#landingPage");
+
+var containerF = document.querySelector('.container-F');
+var containerG = document.querySelector('.container-G');
+var titleF = document.querySelector(".title-F");
+var titleG = document.querySelector(".title-G");
+
+var XFButton = document.querySelector("#XF-button");
+var XGButton = document.querySelector('#XG-button');
+
+var XF = document.querySelector("#XF");
+var XG = document.querySelector("#XG");
+
+titleF.addEventListener("click", () => {
+  containerF.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleG.addEventListener("click", () => {
+  containerG.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+XFButton.addEventListener("click", () => {
+   XF.style.display = 'block';
+   landingPage.style.display = 'none';
+});
+
+XGButton.addEventListener("click", () => {
+  XG.style.display = 'block';
+  landingPage.style.display = 'none';
+});

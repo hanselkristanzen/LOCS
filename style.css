@@ -10,6 +10,7 @@
     --hkDarkPink: rgb(236, 144, 223);
     --spotyGreen: rgb(28, 215, 96);
     --none: rgba(0, 0, 0, 0);
+    --titleHover: rgba(245, 245, 245, 0.6);
 }
 
 /* By: Hansel Kristanzen */
@@ -79,7 +80,14 @@ body {
     text-align: center;
 }
 
-.container {
+.container-F {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-G {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -397,4 +405,84 @@ td a:hover {
 
 .dark tbody td:hover:before {
     background-color: var(--none);
+}
+
+/* Kelas X */
+#XF {
+    display: none;
+}
+
+#XG {
+    display: none;
+}
+
+/* Kelas XI */
+
+/* Kelas XII */
+
+/* Landing Page */
+#landingPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: white;
+    transition: 0.3s;
+}
+
+.mainTitle {
+    font-size: 60pt;
+    transition: 0.3s;
+}
+
+.mainTitle:hover {
+    color: var(--titleHover);
+}
+
+#kelasX {
+    width: 0.5rem;
+    transition: 0.3s;
+}
+
+/* #kelasX:hover {
+    transform: scale(1.1);
+} */
+
+#X-button {
+    background-color: var(--none);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: 0.3s;
+}
+
+#X-button:hover {
+    transform: scale(1.5);
+}
+
+.X-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 1s;
+}
+
+.X-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.X-dropdown a:hover {
+    background-color: #ddd;
+}
+
+#kelasX:hover .X-dropdown {
+    display: block;
 }
