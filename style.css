@@ -418,19 +418,19 @@ td a:hover {
     color: white;
 }
 
-.dark #XI-button {
+.dark #Xl-button {
     color: var(--appleBrightGrey);
 }
 
-.dark #XI-button:hover {
+.dark #Xl-button:hover {
     color: white;
 }
 
-.dark .XI-dropdown a {
+.dark .Xl-dropdown a {
     color: var(--appleGrey);
 }
 
-.dark .XI-dropdown a:hover {
+.dark .Xl-dropdown a:hover {
     color: white;
 }
 
@@ -467,7 +467,7 @@ td a:hover {
     display: none;
 }
 
-#Xl {
+#XI {
     display: none;
 }
 
@@ -512,14 +512,18 @@ td a:hover {
 #X-button {
     background-color: var(--none);
     color: white;
-    padding: 16px;
+    /* padding: 16px;
     padding-bottom: 7px;
-    padding-left: 2rem;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem; */
+    padding-top: 10px;
+    padding-bottom: 7px;
     font-size: 16px;
     border: none;
     transition: 0.2s;
     font-family: font1;
     font-size: 16pt;
+    width: 50%;
 }
 
 #X-button:hover {
@@ -534,7 +538,7 @@ td a:hover {
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
     transition: 1s;
-    left: 1rem;
+    left: 1.9rem;
 }
 
 .X-dropdown a {
@@ -557,36 +561,40 @@ td a:hover {
 
 
 /* Landing Page Kelas XI */
-#kelasXI {
+#kelasXl {
     width: 0.5rem;
     transition: 0.3s;
 }
 
-#XI-button {
+#Xl-button {
     background-color: var(--none);
     color: white;
-    padding: 16px;
+    /* padding: 16px;
+    padding-bottom: 7px;
+    padding-left: 3.5rem; */
+    padding-top: 10px;
     padding-bottom: 7px;
     font-size: 16px;
     border: none;
     transition: 0.2s;
     font-family: font1;
     font-size: 16pt;
+    width: 45%;
 }
 
-#XI-button:hover {
+#Xl-button:hover {
     transform: scale(1.4);
 }
 
-.XI-dropdown {
+.Xl-dropdown {
     display: none;
     position: absolute;
     z-index: 1;
     transition: 1s;
-    left: 2.9rem;
+    left: 8.5rem;
 }
 
-.XI-dropdown a {
+.Xl-dropdown a {
     color: white;
     padding: 5px 16px;
     text-decoration: none;
@@ -595,11 +603,11 @@ td a:hover {
     font-family: font1;
 }
 
-.XI-dropdown a:hover {
+.Xl-dropdown a:hover {
     transform: scale(1.2);
 }
 
-#kelasXI:hover .XI-dropdown {
+#kelasXl:hover .Xl-dropdown {
     display: block;
 }
 

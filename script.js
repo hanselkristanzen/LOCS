@@ -133,7 +133,7 @@ var titleE = document.querySelector(".title-E");
 var titleF = document.querySelector(".title-F");
 var titleG = document.querySelector(".title-G");
 var titleH = document.querySelector(".title-H");
-var titlel = document.querySelector(".title-l");
+var titleI = document.querySelector(".title-I");
 var titleJ = document.querySelector(".title-J");
 
 var XAButton = document.querySelector('#XA-button');
@@ -144,7 +144,7 @@ var XEButton = document.querySelector('#XE-button');
 var XFButton = document.querySelector("#XF-button");
 var XGButton = document.querySelector('#XG-button');
 var XHButton = document.querySelector('#XH-button');
-var XlButton = document.querySelector('#Xl-button');
+var XIButton = document.querySelector('#XI-button');
 var XJButton = document.querySelector('#XJ-button');
 
 var XA = document.querySelector("#XA");
@@ -155,7 +155,7 @@ var XE = document.querySelector("#XE");
 var XF = document.querySelector("#XF");
 var XG = document.querySelector("#XG");
 var XH = document.querySelector("#XH");
-var Xl = document.querySelector("#Xl");
+var XI = document.querySelector("#XI");
 var XJ = document.querySelector("#XJ");
 
 //Listen for title
@@ -199,8 +199,8 @@ titleH.addEventListener("click", () => {
   landingPage.style.display = 'block';
 });
 
-titlel.addEventListener("click", () => {
-  Xl.style.display = 'none';
+titleI.addEventListener("click", () => {
+  XI.style.display = 'none';
   landingPage.style.display = 'block';
 });
 
@@ -250,8 +250,8 @@ XHButton.addEventListener("click", () => {
   landingPage.style.display = 'none';
 });
 
-XlButton.addEventListener("click", () => {
-  Xl.style.display = 'block';
+XIButton.addEventListener("click", () => {
+  XI.style.display = 'block';
   landingPage.style.display = 'none';
 });
 
