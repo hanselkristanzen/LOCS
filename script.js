@@ -99,7 +99,7 @@ setInterval(function () {
 
 var checkbox = document.querySelector('#checkbox');
 var switcher = document.querySelector('.switcher');
-var yyy = 0; //just random variable for if statement below
+var yyy = 1; //just random variable for if statement below (1 = dark, 0 = light)
 checkbox.addEventListener("click", function(){ 
   //switch animation
   if (yyy == 0) {
@@ -118,28 +118,121 @@ checkbox.addEventListener("change", function() {
   document.body.classList.toggle("dark");
 })
 
+document.body.classList.toggle("dark");
+
 //Switch Kelas
 var landingPage = document.querySelector("#landingPage");
 
-var containerF = document.querySelector('.container-F');
-var containerG = document.querySelector('.container-G');
+// var containerF = document.querySelector('.container-F');
+// var containerG = document.querySelector('.container-G');
+var titleA = document.querySelector(".title-A");
+var titleB = document.querySelector(".title-B");
+var titleC = document.querySelector(".title-C");
+var titleD = document.querySelector(".title-D");
+var titleE = document.querySelector(".title-E");
 var titleF = document.querySelector(".title-F");
 var titleG = document.querySelector(".title-G");
+var titleH = document.querySelector(".title-H");
+var titlel = document.querySelector(".title-l");
+var titleJ = document.querySelector(".title-J");
 
+var XAButton = document.querySelector('#XA-button');
+var XBButton = document.querySelector('#XB-button');
+var XCButton = document.querySelector('#XC-button');
+var XDButton = document.querySelector('#XD-button');
+var XEButton = document.querySelector('#XE-button');
 var XFButton = document.querySelector("#XF-button");
 var XGButton = document.querySelector('#XG-button');
+var XHButton = document.querySelector('#XH-button');
+var XlButton = document.querySelector('#Xl-button');
+var XJButton = document.querySelector('#XJ-button');
 
+var XA = document.querySelector("#XA");
+var XB = document.querySelector("#XB");
+var XC = document.querySelector("#XC");
+var XD = document.querySelector("#XD");
+var XE = document.querySelector("#XE");
 var XF = document.querySelector("#XF");
 var XG = document.querySelector("#XG");
+var XH = document.querySelector("#XH");
+var Xl = document.querySelector("#Xl");
+var XJ = document.querySelector("#XJ");
+
+//Listen for title
+titleA.addEventListener("click", () => {
+  XA.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleB.addEventListener("click", () => {
+  XB.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleC.addEventListener("click", () => {
+  XC.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleD.addEventListener("click", () => {
+  XD.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleE.addEventListener("click", () => {
+  XE.style.display = 'none';
+  landingPage.style.display = 'block';
+});
 
 titleF.addEventListener("click", () => {
-  containerF.style.display = 'none';
+  XF.style.display = 'none';
   landingPage.style.display = 'block';
 });
 
 titleG.addEventListener("click", () => {
-  containerG.style.display = 'none';
+  XG.style.display = 'none';
   landingPage.style.display = 'block';
+});
+
+titleH.addEventListener("click", () => {
+  XH.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titlel.addEventListener("click", () => {
+  Xl.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+titleJ.addEventListener("click", () => {
+  XJ.style.display = 'none';
+  landingPage.style.display = 'block';
+});
+
+//Listen for button
+XAButton.addEventListener("click", () => {
+  XA.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XBButton.addEventListener("click", () => {
+  XB.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XCButton.addEventListener("click", () => {
+  XC.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XDButton.addEventListener("click", () => {
+  XD.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XEButton.addEventListener("click", () => {
+  XE.style.display = 'block';
+  landingPage.style.display = 'none';
 });
 
 XFButton.addEventListener("click", () => {
@@ -151,3 +244,23 @@ XGButton.addEventListener("click", () => {
   XG.style.display = 'block';
   landingPage.style.display = 'none';
 });
+
+XHButton.addEventListener("click", () => {
+  XH.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XlButton.addEventListener("click", () => {
+  Xl.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+XJButton.addEventListener("click", () => {
+  XJ.style.display = 'block';
+  landingPage.style.display = 'none';
+});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   XF.style.display = 'none';
+//   XG.style.display = 'none';
+// });

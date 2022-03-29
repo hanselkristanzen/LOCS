@@ -5,6 +5,7 @@
 }
 :root {
     --appleGrey: rgba(245, 245, 247, 0.65);
+    --appleBrightGrey: rgba(245, 245, 247, 0.8);
     --hkPink: rgb(255, 115, 227);
     --hkAlmostPink: rgb(238, 123, 222);
     --hkDarkPink: rgb(236, 144, 223);
@@ -80,14 +81,7 @@ body {
     text-align: center;
 }
 
-.container-F {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.container-G {
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -333,6 +327,7 @@ td a:hover {
     height: 20px;
     width: 20px;
     border-radius: 50%;
+    transform: translateX(26px);
 }
 
 .switcher:active {
@@ -350,7 +345,7 @@ td a:hover {
 }
 
 .checkbox:checked + .label .switcher {
-    transform: translateX(26px); 
+    /* transform: translateX(26px);  */
     transition: 0.1s;
 }
 
@@ -392,7 +387,7 @@ td a:hover {
 }
 
 .dark th {
-    color: rgba(245, 245, 247, 0.75);
+    color: var(--appleBrightGrey);
 }
 
 .dark #versionInfo:hover {
@@ -407,12 +402,76 @@ td a:hover {
     background-color: var(--none);
 }
 
+.dark #X-button {
+    color: var(--appleBrightGrey);
+}
+
+.dark #X-button:hover {
+    color: white;
+}
+
+.dark .X-dropdown a {
+    color: var(--appleGrey);
+}
+
+.dark .X-dropdown a:hover {
+    color: white;
+}
+
+.dark #XI-button {
+    color: var(--appleBrightGrey);
+}
+
+.dark #XI-button:hover {
+    color: white;
+}
+
+.dark .XI-dropdown a {
+    color: var(--appleGrey);
+}
+
+.dark .XI-dropdown a:hover {
+    color: white;
+}
+
 /* Kelas X */
+#XA {
+    display: none;
+}
+
+#XB {
+    display: none;
+}
+
+#XC {
+    display: none;
+}
+
+#XD {
+    display: none;
+}
+
+#XE {
+    display: none;
+}
+
 #XF {
     display: none;
 }
 
 #XG {
+    display: none;
+}
+
+#XH {
+    display: none;
+}
+
+#Xl {
+    display: none;
+}
+
+#XJ {
     display: none;
 }
 
@@ -423,7 +482,7 @@ td a:hover {
 /* Landing Page */
 #landingPage {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
@@ -440,6 +499,7 @@ td a:hover {
     color: var(--titleHover);
 }
 
+/* Landing Page kelas X */
 #kelasX {
     width: 0.5rem;
     transition: 0.3s;
@@ -453,36 +513,95 @@ td a:hover {
     background-color: var(--none);
     color: white;
     padding: 16px;
+    padding-bottom: 7px;
+    padding-left: 2rem;
     font-size: 16px;
     border: none;
-    transition: 0.3s;
+    transition: 0.2s;
+    font-family: font1;
+    font-size: 16pt;
 }
 
 #X-button:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 
 .X-dropdown {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
     transition: 1s;
+    left: 1rem;
 }
 
 .X-dropdown a {
-    color: black;
-    padding: 12px 16px;
+    color: white;
+    padding: 5px 16px;
     text-decoration: none;
     display: block;
+    transition: 0.2s;
+    font-family: font1;
 }
 
 .X-dropdown a:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    transform: scale(1.2);
 }
 
 #kelasX:hover .X-dropdown {
     display: block;
 }
+
+
+/* Landing Page Kelas XI */
+#kelasXI {
+    width: 0.5rem;
+    transition: 0.3s;
+}
+
+#XI-button {
+    background-color: var(--none);
+    color: white;
+    padding: 16px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s;
+    font-family: font1;
+    font-size: 16pt;
+}
+
+#XI-button:hover {
+    transform: scale(1.4);
+}
+
+.XI-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    left: 2.9rem;
+}
+
+.XI-dropdown a {
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+    font-family: font1;
+}
+
+.XI-dropdown a:hover {
+    transform: scale(1.2);
+}
+
+#kelasXI:hover .XI-dropdown {
+    display: block;
+}
+
+
+/* Landing Page Kelas XII */
