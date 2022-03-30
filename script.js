@@ -1,5 +1,5 @@
 //Version
-var version = "Version 1.3";
+var version = "Version 2.0";
 
 //Alert Version Window
 function alertVersionWindow(){
