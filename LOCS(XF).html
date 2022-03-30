@@ -11,66 +11,686 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="thetitle">
-            <a id="title" href="#">LOCS</a>
-            <div class="subtitle">for XF <br>
-                 <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
-            </div>
+    <!-- Landing Page -->
+    <div id="landingPage">
+        <div class="mainTitle">
+            LOCS
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th class="blok">Blok</th>
-                    <th>Senin</th>
-                    <th>Selasa</th>
-                    <th>Rabu</th>
-                    <th>Kamis</th>
-                    <th>Jumat</th>
-                    <th>Sabtu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
-                    <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
-                    <td><a href="https://zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09 " target="_blank">Sejarah</a></td>
-                    <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
-                    <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
-                    <td><a href="https://meet.google.com/iyi-fmxg-mza" target="_blank">Biologi</a></td>
-                    <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
-                </tr>
-                <tr>
-                    <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
-                    <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
-                    <td><a href="https://zoom.us/j/96661460378?pwd=ajNqVElNQzQyV0RBVnUwUFBFR2JTZz09" target="_blank">B Indo</a></td>
-                    <td><a href="https://meet.google.com/iyi-fmxg-mza" target="_blank">Biologi</a></td>
-                    <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
-                    <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
-                    <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
-                </tr>
-                <tr>
-                    <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
-                    <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
-                    <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
-                    <td><a href="https://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
-                    <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
-                    <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Perwali</a></td>
-                    <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
-                </tr>
-                <tr>
-                    <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
-                    <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
-                    <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
-                    <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
-                    <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
-                    <td id="alertHi"><a href="" >- </a></td>
-                    <td id="infoWindow"><a href="" >-</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <span id="kelasX">
+            <button id="X-button">X</button>
+            <div class="X-dropdown">
+                <a id="XA-button"href="#">XA</a>
+                <a id="XB-button"href="#">XB</a>
+                <a id="XC-button"href="#">XC</a>
+                <a id="XD-button"href="#">XD</a>
+                <a id="XE-button"href="#">XE</a>
+                <a id="XF-button" href="#">XF</a>
+                <a id="XG-button"href="#">XG</a>
+                <a id="XH-button"href="#">XH</a>
+                <a id="XI-button"href="#">XI</a>
+                <a id="XJ-button"href="#">XJ</a>
+            </div>
+        </span>
+        <span id="kelasXl">
+            <button id="Xl-button">XI</button>
+            <div class="Xl-dropdown">
+                <a id="XlA-button"href="#">XIA</a>
+                <a id="XlB-button"href="#">XIB</a>
+                <a id="XlC-button"href="#">XIC</a>
+                <a id="XlD-button"href="#">XID</a>
+                <a id="XlE-button"href="#">XIE</a>
+                <a id="XlF-button" href="#">XIF</a>
+                <a id="XlG-button"href="#">XIG</a>
+                <a id="XlH-button"href="#">XIH</a>
+                <a id="XlI-button"href="#">XII</a>
+                <a id="XlJ-button"href="#">XIJ</a>
+            </div>
+        </span>
+        <!-- <button id="XI-button"></button>
+        <button id="XII-button"></button> -->
+
     </div>
 
+<!-- XA -->
+    <div id="XA">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-A" href="#">LOCS</a>
+                <div class="subtitle">for XA<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://meet.google.com/xei-mvec-qdy" target="_blank">Geo (1)</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://us02web.zoom.us/j/82802212460?pwd=WEYyZ3RDSlo4WHk0Um1OKzg2dTc4dz09" target="_blank">Eko</a></td>
+                        <td><a href="https://meet.google.com/nob-oozr-rcj" target="_blank">BK</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SWa</a></td>
+                        <td><a href="https://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SMi</a></td>
+                        <td><a href="https://meet.google.com/ybf-ehio-yyt" target="_blank">BIW</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Perwali</a></td>
+                        <td><a href="https://zoom.us/j/2574018133?pwd=WVhwZUFRdzhKUUszT3Ewa1ZjanlYZz09" target="_blank">Geo (2)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Eko</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XB -->
+    <div id="XB">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-B" href="#">LOCS</a>
+                <div class="subtitle">for XB<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Eko</a></td>
+                        <td><a href="https://meet.google.com/nob-oozr-rcj" target="_blank">BK</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SMi</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Eko</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://meet.google.com/ybf-ehio-yyt" target="_blank">BIW</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SWa</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/2574018133?pwd=WVhwZUFRdzhKUUszT3Ewa1ZjanlYZz09" target="_blank">Geo (2)</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/xei-mvec-qdy" target="_blank">Geo (1)</a></td>
+                        <td><a href="   " target="_blank">Perwali</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XC -->
+    <div id="XC">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-C" href="#">LOCS</a>
+                <div class="subtitle">for XC<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SMi</a></td>
+                        <td><a href="https://zoom.us/j/2574018133?pwd=WVhwZUFRdzhKUUszT3Ewa1ZjanlYZz09" target="_blank">Geo (2)</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">SWa</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Eko</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://zoom.us/j/4140357968?pwd=a0dSVHdkNDZBS2FiNTk0ZWc3T0xqQT09" target="_blank">Eko</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://meet.google.com/ybf-ehio-yyt" target="_blank">BIW</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href=" " target="_blank">Perwali</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/xei-mvec-qdy" target="_blank">Geo (1)</a></td>
+                        <td><a href="https://meet.google.com/nob-oozr-rcj" target="_blank">BK</a></td>
+                        <td><a href="https://zoom.us/j/3146316563?pwd=RWN6NXlqcWRLWVVxdXowb2dMQklQZz09" target="_blank">Sos</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XD -->
+    <div id="XD">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-D" href="#">LOCS</a>
+                <div class="subtitle">for XD<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://meet.google.com/djx-zmds-vab" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/djx-zmds-vab" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Perwali</a></td>
+                        <td><a href="https://meet.google.com/nob-oozr-rcj" target="_blank">BK</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XE -->
+    <div id="XE">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-E" href="#">LOCS</a>
+                <div class="subtitle">for XE<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/djx-zmds-vab" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://meet.google.com/pri-wgom-fmz" target="_blank">Math</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://meet.google.com/nob-oozr-rcj" target="_blank">BK</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://meet.google.com/djx-zmds-vab" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Perwali</a></td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+<!-- XF -->
+    <div id="XF">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-F" href="#">LOCS</a>
+                <div class="subtitle">for XF <br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="https://zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09 " target="_blank">Sejarah</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/iyi-fmxg-mza" target="_blank">Biologi</a></td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://meet.google.com/iyi-fmxg-mza" target="_blank">Biologi</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
+                        <td><a href="https://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Perwali</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XG -->
+    <div id="XG">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-G" href="#">LOCS</a>
+                <div class="subtitle">for XG<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://zoom.us/j/9494923778?pwd=ZlNEK21XTFlaZnBldlBjbytUL2Rtdz09" target="_blank">B Indo</a></td>
+                        <td><a href="https://meet.google.com/iyi-fmxg-mza " target="_blank">Bio</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/zyf-aufp-gyq" target="_blank">Fisika</a></td>
+                        <td><a href="   " target="_blank">Perwali</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math</a></td>
+                        <td><a href="https://meet.google.com/iyi-fmxg-mza" target="_blank">Bio</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XH -->
+    <div id="XH">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-H" href="#">LOCS</a>
+                <div class="subtitle">for XH<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://meet.google.com/unp-jggo-bjp" target="_blank">B Indo</a></td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://zoom.us/j/4949246124?pwd=Ni9oQXpvVkp2cGI4OVNKRElDV0RSQT09" target="_blank">Math (2)</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Perwali</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<!-- XI -->
+    <div id="XI">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-I" href="#">LOCS</a>
+                <div class="subtitle">for XI<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://zoom.us/j/4949246124?pwd=Ni9oQXpvVkp2cGI4OVNKRElDV0RSQT09" target="_blank">Math (2)</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                        <td><a href="https://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="   " target="_blank">Perwali</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/unp-jggo-bjp" target="_blank">B Indo</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+<!-- XJ -->
+    <div id="XJ">
+        <div class="container">
+            <div class="thetitle">
+                <a class="title-J" href="#">LOCS</a>
+                <div class="subtitle">for XJ<br>
+                     <div class="zoomz" style="visibility: hidden; color: black"><a class= "zoom" style="color:black" href="https://open.spotify.com/user/21oo2diui5hh6h5waageqkxwi?si=5d378fe01d6148c8" target="_blank">hk</a>™</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="blok">Blok</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blok"><strong>1</strong><br>(7.15 - 8.15)</td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                        <td><a href="https://meet.google.com/ffh-rzbv-hyh" target="_blank">Komp</a></td>
+                        <td><a href="http://meet.google.com/zjd-sqte-omu" target="_blank">PKN</a></td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/aia-kjfm-fyr" target="_blank">Math (1)</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>2</strong><br>(8.25 - 9.25)</td>
+                        <td><a href="https://zoom.us/j/2610060996?pwd=bVJjSE5BdHVmeUl1SXIyUng1dTdpQT09" target="_blank">BIM</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td><a href="http://meet.google.com/kra-umar-wed" target="_blank">Seni</a></td>
+                        <td><a href="https://meet.google.com/sik-ndsx-qjg" target="_blank">Mand</a></td>
+                        <td><a href="https://zoom.us/j/2045964245?pwd=SWs0TXozV0ZlQmEvUWNwcCtYQ09pQT09" target="_blank">OR</a></td>
+                        <td><a href="https://us06web.zoom.us/j/98326537741?pwd=aDhLSW5yd3BmUzV6ekVZOVhyNTNZQT09" target="_blank">Agama</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>3</strong><br>(9.55 - 10.55)</td> 
+                        <td><a href="https://zoom.us/j/9861964173?pwd=OUlSRGRWTkRwM0lUV0ZlZjhhbkNMdz09" target="_blank">Jawa</a></td>
+                        <td><a href="https://meet.google.com/byn-wsqg-vau" target="_blank">BIW</a></td>
+                        <td><a href="https://meet.google.com/wkw-vrcb-ese" target="_blank">Fisika</a></td>
+                        <td><a href="https://meet.google.com/unp-jggo-bjp" target="_blank">B Indo</a></td>
+                        <td><a href=" " target="_blank">Perwali</a></td>
+                        <td><a href="https://zoom.us/j/4949246124?pwd=Ni9oQXpvVkp2cGI4OVNKRElDV0RSQT09" target="_blank">Math (2)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="blok"><strong>4</strong><br>(11.05 - 12.05)</td>
+                        <td><a href="https://meet.google.com/nwf-xhwh-tha" target="_blank">Bio</a></td>
+                        <td><a href="https://meet.google.com/pie-pnhm-drp" target="_blank">Kimia</a></td>
+                        <td><a href="https://meet.google.com/qio-gdau-him" target="_blank">BK</a></td>
+                        <td><a href="https://us02web.zoom.us/j/6129858401?pwd=dEtISEFpeEhPK0kwdE5jSUtBM3N4dz09" target="_blank">Sejarah</a></td>
+                        <td id="alertHi"><a href="" >- </a></td>
+                        <td id="infoWindow"><a href="" >-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>   
+
+    
         <!-- Draggable Spotify Window -->
     <div id="spotify">
         <div id="spotifyHeader">
@@ -82,7 +702,7 @@
             Spotify
 
         </div>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7JwE7U1A2GiTji9FuUcGo2?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7JwE7U1A2GiTji9FuUcGo2?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
     
         <!-- Spotify icon button -->
@@ -93,7 +713,7 @@
 
     <!-- Version Info -->
     <div id="versionInfo">
-        Version 1.3
+        Version 2.0
     </div>
 
     <!-- Current Time -->

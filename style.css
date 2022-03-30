@@ -5,11 +5,13 @@
 }
 :root {
     --appleGrey: rgba(245, 245, 247, 0.65);
+    --appleBrightGrey: rgba(245, 245, 247, 0.8);
     --hkPink: rgb(255, 115, 227);
     --hkAlmostPink: rgb(238, 123, 222);
     --hkDarkPink: rgb(236, 144, 223);
     --spotyGreen: rgb(28, 215, 96);
     --none: rgba(0, 0, 0, 0);
+    --titleHover: rgba(245, 245, 245, 0.6);
 }
 
 /* By: Hansel Kristanzen */
@@ -325,6 +327,7 @@ td a:hover {
     height: 20px;
     width: 20px;
     border-radius: 50%;
+    transform: translateX(26px);
 }
 
 .switcher:active {
@@ -342,7 +345,7 @@ td a:hover {
 }
 
 .checkbox:checked + .label .switcher {
-    transform: translateX(26px); 
+    /* transform: translateX(26px);  */
     transition: 0.1s;
 }
 
@@ -384,7 +387,7 @@ td a:hover {
 }
 
 .dark th {
-    color: rgba(245, 245, 247, 0.75);
+    color: var(--appleBrightGrey);
 }
 
 .dark #versionInfo:hover {
@@ -398,3 +401,215 @@ td a:hover {
 .dark tbody td:hover:before {
     background-color: var(--none);
 }
+
+.dark #X-button {
+    color: var(--appleBrightGrey);
+}
+
+.dark #X-button:hover {
+    color: white;
+}
+
+.dark .X-dropdown a {
+    color: var(--appleGrey);
+}
+
+.dark .X-dropdown a:hover {
+    color: white;
+}
+
+.dark #Xl-button {
+    color: var(--appleBrightGrey);
+}
+
+.dark #Xl-button:hover {
+    color: white;
+}
+
+.dark .Xl-dropdown a {
+    color: var(--appleGrey);
+}
+
+.dark .Xl-dropdown a:hover {
+    color: white;
+}
+
+/* Kelas X */
+#XA {
+    display: none;
+}
+
+#XB {
+    display: none;
+}
+
+#XC {
+    display: none;
+}
+
+#XD {
+    display: none;
+}
+
+#XE {
+    display: none;
+}
+
+#XF {
+    display: none;
+}
+
+#XG {
+    display: none;
+}
+
+#XH {
+    display: none;
+}
+
+#XI {
+    display: none;
+}
+
+#XJ {
+    display: none;
+}
+
+/* Kelas XI */
+
+/* Kelas XII */
+
+/* Landing Page */
+#landingPage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: white;
+    transition: 0.3s;
+}
+
+.mainTitle {
+    font-size: 60pt;
+    transition: 0.3s;
+}
+
+.mainTitle:hover {
+    color: var(--titleHover);
+}
+
+/* Landing Page kelas X */
+#kelasX {
+    width: 0.5rem;
+    transition: 0.3s;
+}
+
+/* #kelasX:hover {
+    transform: scale(1.1);
+} */
+
+#X-button {
+    background-color: var(--none);
+    color: white;
+    /* padding: 16px;
+    padding-bottom: 7px;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem; */
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s;
+    font-family: font1;
+    font-size: 16pt;
+    width: 50%;
+}
+
+#X-button:hover {
+    transform: scale(1.4);
+}
+
+.X-dropdown {
+    display: none;
+    position: absolute;
+    /* background-color: #f1f1f1; */
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    transition: 1s;
+    left: 1.9rem;
+}
+
+.X-dropdown a {
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+    font-family: font1;
+}
+
+.X-dropdown a:hover {
+    /* background-color: #ddd; */
+    transform: scale(1.2);
+}
+
+#kelasX:hover .X-dropdown {
+    display: block;
+}
+
+
+/* Landing Page Kelas XI */
+#kelasXl {
+    width: 0.5rem;
+    transition: 0.3s;
+}
+
+#Xl-button {
+    background-color: var(--none);
+    color: white;
+    /* padding: 16px;
+    padding-bottom: 7px;
+    padding-left: 3.5rem; */
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s;
+    font-family: font1;
+    font-size: 16pt;
+    width: 40%;
+}
+
+#Xl-button:hover {
+    transform: scale(1.4);
+}
+
+.Xl-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    left: 8.2rem;
+}
+
+.Xl-dropdown a {
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+    font-family: font1;
+}
+
+.Xl-dropdown a:hover {
+    transform: scale(1.2);
+}
+
+#kelasXl:hover .Xl-dropdown {
+    display: block;
+}
+
+
+/* Landing Page Kelas XII */
